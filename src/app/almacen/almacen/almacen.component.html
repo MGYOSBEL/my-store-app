@@ -2,8 +2,8 @@
 <ul>
     <li *ngFor="let item of almacen">
         <div>{{item.ID}} - {{item.nombre}}: {{item.costo}}CUC</div>
-        <div>Categoría: {{dataService.GetCategoria(item.categoria)}}</div>
-        <div>Proveedor: {{dataService.GetProveedor(item.proveedor)}}</div>
-        <div>Almacen: {{dataService.GetAlmacen(item.almacen)}}</div>
+        <div>Categoría: {{dataService.getCategoria(item.categoria)}}</div>
+        <div>Proveedor: {{dataService.getProveedor(item.proveedor)}}</div>
+        <div>Almacen: {{dataService.getAlmacen(item.almacen)}}</div>
     </li>
 </ul>

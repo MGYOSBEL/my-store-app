@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { ItemComponent } from './item/item/item.component';
 import { AlmacenComponent } from './almacen/almacen/almacen.component';
 import {DataService} from './data.service';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ItemComponent,
-    AlmacenComponent
+    AlmacenComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

@@ -18,6 +18,10 @@ export class AlmacenComponent implements OnInit {
   ngOnInit() {
     this.almacen = this.dataService.getAllItems();
   }
-  
+
+  getAlmacen(id: number):string{
+    return this.dataService.getAlmacen(id);
+  }
+
 
 }
