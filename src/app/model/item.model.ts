@@ -4,14 +4,14 @@ export class Item{
 
     nombre: string;
     ID: number;
-    descripcion: string;
+    descripcion?: string;
     categoria: number; // debe ser de tipo categoria o aca va el ID de la categoria??
     costo: number; // los float tambian son number???
-    precio: number;
+    precio?: number;
     proveedor: number; // debe ser de tipo proveedor o aca va el ID del proveedor??
     almacen: number; // debe ser de tipo almacen o aca va el ID del almacen??
-    fechaEntrada: Date;
-    fechaSalida: Date;
+    fechaEntrada?: Date;
+    fechaSalida?: Date;
 
     constructor(Nombre: string, id: number, Categoria: number, Costo: number, Proveedor: number, Almacen: number){
         this.nombre = Nombre;
