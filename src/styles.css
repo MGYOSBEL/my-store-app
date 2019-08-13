@@ -1,1 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
+ /* Navigation link styles */
+   
+ /* .router-outlet{
+  padding: 5px 10px;
+  text-decoration: none;
+  margin-right: 10px;
+  margin-top: 10px;
+  display: -webkit-inline-flex;
+  background-color: rgb(158, 210, 240);
+  border-radius: 4px;
+  width: 100%;
+  border: #607D8B;
+  
+}  */
+
+nav {
+  background-color: rgb(158, 210, 240);
+  margin-right: 1%;
+  margin-left: 1%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  /* display: -webkit-inline-flex; */
+  background-size: 100%;
+  align-items: flex-start;
+}
+ nav a {
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #eee;
+    border-radius: 4px;
+  }
+  nav a:visited, a:link {
+    color: #607D8B;
+  }
+  nav a:hover {
+    color: #039be5;
+    background-color: #CFD8DC;
+  }
+  nav a.active {
+    color: #039be5;
+  }
+  
+  /* everywhere else */
+  * {
+    font-family: Arial, Helvetica, sans-serif;
+  }

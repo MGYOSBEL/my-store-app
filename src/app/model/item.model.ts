@@ -20,6 +20,6 @@ export class Item{
         this.costo = Costo;
         this.proveedor = Proveedor;
         this.almacen = Almacen;
-        this.fechaEntrada.setDate(Date.now()); // preguntar al papete
+        this.fechaEntrada = new Date(Date.now()); // preguntar al papete
     }
 }

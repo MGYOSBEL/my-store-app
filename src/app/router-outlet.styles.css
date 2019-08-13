@@ -1,0 +1,37 @@
+
+/* Links styles*/
+a {
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #eee;
+    border-radius: 4px;
+  }
+   a:visited, a:link {
+    color: #607D8B;
+  }
+   a:hover {
+    color: #039be5;
+    background-color: #CFD8DC;
+  }
+   a.active {
+    color: #039be5;
+  }
+  
+  /* everywhere else */
+  * {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+
+  h3 {
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-top: 10px;
+    display: inline-block;
+    background-color: rgb(23, 160, 240);
+    /*border-radius: 4px;*/
+    }

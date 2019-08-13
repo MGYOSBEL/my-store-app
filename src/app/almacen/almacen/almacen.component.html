@@ -1,9 +1,11 @@
 <h3> Almacén Principal</h3>
 <ul>
-    <li *ngFor="let item of almacen">
+    <li *ngFor="let item of almacen$ | async ">
         <div>{{item.ID}} - {{item.nombre}}: {{item.costo}}CUC</div>
         <div>Categoría: {{dataService.getCategoria(item.categoria)}}</div>
         <div>Proveedor: {{dataService.getProveedor(item.proveedor)}}</div>
         <div>Almacen: {{dataService.getAlmacen(item.almacen)}}</div>
     </li>
 </ul>
+
+<button (click) = "addItem()">Agregar Item</button>

@@ -7,12 +7,15 @@ import {Categoria} from './model/categoria.model';
 import {CATEGORIAS} from './model/mock-categorias';
 import {Proveedor} from './model/proveedor.model';
 import {PROVEEDORES} from './model/mock-proveedores';
+import { Observable, of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class DataService {
 
+   
+  
   constructor() { }
 
   getItemByID(id: number) :Item {
@@ -23,8 +26,8 @@ export class DataService {
     }
   }
 
-  getAllItems() : Item[]{
-    return ITEMS;
+  getAllItems() : Observable<Item[]>{
+    return of(ITEMS);
   }
 
   getAlmacenItems(id: number):Item[] {
@@ -43,6 +46,24 @@ export class DataService {
 
    getProveedor(id: number):string {
     return PROVEEDORES[id];
+   }
+
+   addItem(item: Item){
+     ITEMS.push(item);
+   }
+
+   setItem(Nombre: string, id: number, Categoria: number, Costo: number, Proveedor: number, Almacen: number, Precio?: number){
+    for(var i=0; i<ITEMS.length; i++)
+    {
+      if (ITEMS[i].ID==id)
+      ITEMS[i].nombre = Nombre;
+      ITEMS[i].categoria=Categoria;
+      ITEMS[i].costo=Costo;
+      ITEMS[i].proveedor=Proveedor;
+      ITEMS[i].almacen=Almacen;
+      ITEMS[i].precio=Precio;
+
+    }
    }
 
   
