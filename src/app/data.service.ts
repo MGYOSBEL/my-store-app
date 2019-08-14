@@ -52,16 +52,21 @@ export class DataService {
      ITEMS.push(item);
    }
 
+   getLength():number{
+    return ITEMS.length;
+   }
+
    setItem(Nombre: string, id: number, Categoria: number, Costo: number, Proveedor: number, Almacen: number, Precio?: number){
     for(var i=0; i<ITEMS.length; i++)
     {
-      if (ITEMS[i].ID==id)
-      ITEMS[i].nombre = Nombre;
-      ITEMS[i].categoria=Categoria;
-      ITEMS[i].costo=Costo;
-      ITEMS[i].proveedor=Proveedor;
-      ITEMS[i].almacen=Almacen;
-      ITEMS[i].precio=Precio;
+      if (ITEMS[i].ID==id){
+        ITEMS[i].nombre = Nombre;
+        ITEMS[i].categoria=Categoria;
+        ITEMS[i].costo=Costo;
+        ITEMS[i].proveedor=Proveedor;
+        ITEMS[i].almacen=Almacen;
+        ITEMS[i].precio=Precio;}
+      
 
     }
    }

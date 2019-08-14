@@ -1,6 +1,6 @@
 <form [formGroup] = "itemDetailForm">
     <label>Item:
-        <input type="text" formControlName="nombre">
+        <input type="text" formControlName="name" >
     </label>
     <label>ID:
         <input type="text" formControlName="id">
@@ -23,5 +23,10 @@
     <label>Precio:
         <input type="text" formControlName="precio">
     </label>
-    <button type="submit" >Editar</button>
+    <label>
+        Create:
+        <input type="checkbox" checked="true" (click)="createEditSelector()" >
+    </label>
+    <button type="submit" (click)="editar()" [disabled]='createEdit'>Editar</button>
+    <button type="submit" (click)="crear()" [disabled]='!createEdit'>Crear</button>
 </form>
