@@ -9,16 +9,22 @@
         <input type="text" formControlName="descripcion">
     </label>
     <label>Categoria:
-        <input type="text" formControlName="categoria">
+       <select>
+           <option *ngFor="let categoria of dataService.getAllCategorias(); let i=index" id="i" value="i">{{categoria}}</option>
+       </select>
     </label>
     <label>Costo:
         <input type="text" formControlName="costo">
     </label>
     <label>Proveedor:
-        <input type="text" formControlName="proveedor">
+        <select>
+            <option *ngFor="let proveedor of dataService.getAllProveedores(); let i=index" id="i" value="i">{{proveedor}}</option>
+        </select>
     </label>
     <label>Almacen:
-        <input type="text" formControlName="almacen">
+        <select>
+            <option *ngFor="let almacen of dataService.getAllAlmacenes(); let i=index" id="i" value="i">{{almacen}}</option>
+        </select>
     </label>
     <label>Precio:
         <input type="text" formControlName="precio">

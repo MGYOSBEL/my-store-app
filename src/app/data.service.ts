@@ -36,14 +36,28 @@ export class DataService {
     return almacen;
   }
 
+  getAllCategorias():string[]{
+    return CATEGORIAS;
+  }
+
   getCategoria(id: number):string {
    return CATEGORIAS[id];
+  }
+
+  
+  getAllAlmacenes():string[]{
+    return ALMACENES;
   }
 
   getAlmacen(id: number):string {
     return ALMACENES[id];
    }
 
+   
+  getAllProveedores():string[]{
+    return PROVEEDORES;
+  }
+  
    getProveedor(id: number):string {
     return PROVEEDORES[id];
    }

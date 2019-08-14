@@ -1,3 +1,3 @@
 export const CATEGORIAS: string[] = [
-    'Otros','Herramientas', 'Electrodomésticos', 'Almacén Michel'
+    'Otros','Herramientas', 'Electrodomésticos'
   ]

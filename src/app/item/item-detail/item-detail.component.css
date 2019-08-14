@@ -8,6 +8,8 @@
 display: inline;
 }
 
+
+
 label {
   display: block;
   width: 6em;
@@ -17,10 +19,26 @@ label {
 }
 
 input {
-  height: 2em;
-  font-size: 1em;
-  padding-left: .4em;
+    height: 2em;
+    font-size: 1em;
+    padding-left: .4em;
+    width: 12em;
+  }
+input [type=checkbox]{
+    height: 2em;
+    font-size: 1em;
+    padding-left: .4em;
+    width: auto;
 }
+
+
+
+select {
+    height: 2.5em;
+    font-size: 1em;
+    padding-left: .4em;
+    width: 12.5em;
+  }
 
 button {
   font-family: Arial;
